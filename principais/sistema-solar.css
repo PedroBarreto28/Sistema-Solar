@@ -63,7 +63,7 @@ body {
 
 /* FUNDO */
 .fundo {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -167,3 +167,73 @@ body {
 @keyframes rot6 { to { transform: translateX(-50%) rotate(360deg); } }
 @keyframes rot7 { to { transform: translateX(-50%) rotate(360deg); } }
 @keyframes rot8 { to { transform: translateX(-50%) rotate(360deg); } }
+
+
+/* =============== */
+@media (max-width:1024px) {
+
+    header h1 {
+        font-size: 4vw;
+    }
+
+    .planetas img {
+        width: 120px;
+    }
+}
+
+/* ================== */
+@media (max-width:768px) {
+
+    header {
+        padding-top: 20px;
+    }
+
+    header h1 {
+        font-size: 5.8vw;
+        text-align: center;
+    }
+
+    .container-planetas {
+        width: 90%;
+        margin: auto;
+    }
+
+    .planetas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .planetas img {
+        width: 95px;
+    }
+}
+
+/* ===================== */
+@media (max-width:480px) {
+
+    header h1 {
+        font-size: 7vw;
+    }
+
+    .planetas {
+        gap: 12px;
+    }
+
+    .planetas img {
+        width: 80px;
+    }
+}
+
+/* ===================== */
+@media (max-width:390px) {
+
+    header h1 {
+        font-size: 8vw;
+    }
+
+    .planetas img {
+        width: 70px;
+    }
+}
